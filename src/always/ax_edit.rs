@@ -453,8 +453,8 @@ mod stub {
         anyhow::bail!("keystrokes not implemented on this platform")
     }
 
-    /// Linux: text, Backspace and Return — what live typing sends (focused
-    /// window; `KeyTarget::Pid` has no meaning here).
+    /// Linux: text, Backspace and Return — what live typing and spoken
+    /// Return send (focused window; `KeyTarget::Pid` has no meaning here).
     /// Other keys or modifiers are refused, so plans needing them fail as
     /// before. Browser-engine windows get real key presses for the layout
     /// (`linux_keys`); elsewhere `wtype` (virtual keyboard, layout
