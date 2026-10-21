@@ -34,6 +34,7 @@ pub mod level_meter;
 #[cfg(target_os = "linux")]
 pub mod linux_keys;
 pub mod live_preview;
+pub mod live_type;
 pub mod localization;
 pub mod log;
 pub mod mic_monitor;
